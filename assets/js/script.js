@@ -21,7 +21,6 @@ function getHour() {
 //When type text and press save button, saves to local storage (event listener?)
 
     $('.saveBtn').on("click", function(){
-        alert("i clicked on the save buton")
         var textArea  = $(this).parent().find('.past').val();
         var id = $(this).parent().find('.past').attr("id")
         console.log(textArea, id)
@@ -29,8 +28,8 @@ function getHour() {
         // grab the text tthat the user typed and save it to localStorage
 
     });
-//get text from text area and display in textbox
-    $("#9-textarea").val(localStorage.getItem("9AM"));
+
+    $("#9-textarea").val(localStorage.getItem(id, textArea));
     $("#10-textarea").val(localStorage.getItem("10AM"));
     $("#11-textarea").val(localStorage.getItem("11AM"));
     $("#12-textarea").val(localStorage.getItem("12AM"));
