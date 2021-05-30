@@ -38,6 +38,8 @@ function getHour() {
     $("#3-textarea").val(localStorage.getItem("3PM"));
     $("#4-textarea").val(localStorage.getItem("4PM"));
     $("#5-textarea").val(localStorage.getItem("5PM"));
+
+    event.preventDefault()
     
 
 
